@@ -77,7 +77,7 @@ function createWindow() {
     fullscreenable: false,
     resizable: false,
     transparent: true, 
-    frame: false, 
+    frame: false,
     alwaysOnTop: true,
     icon: __dirname+'/src/img/icon.png',
     webPreferences: {
