@@ -1,5 +1,5 @@
 const {app, BrowserWindow, ipcMain, shell} = require('electron');
-const { getWindowSettings, savePosition} = require('./settings')
+const { getWindowSettings, savePosition } = require('./settings')
 
 const path = require('path');
 const url = require('url');
@@ -7,7 +7,7 @@ const ipc = ipcMain
 
 let win;
 
-function createWindow(){
+function createWindow() {
 
   const winpos = getWindowSettings()
   
