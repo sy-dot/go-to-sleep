@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shutdown Timer!</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="900" class="timer__button">15 Mins</button>
+      <button data-time="3600" class="timer__button">1 hour</button>
+      <button data-time="7200" class="timer__button">2 hours</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Enter Minutes">
+      </form>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+      <p id="cancel" class="cancel_shutdown">Cancel</p>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+
+  <!-- <script>
+    require("./index.js");
+  </script> -->
+</body>
+
+</html>

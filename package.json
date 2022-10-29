@@ -1,0 +1,38 @@
+{
+  "name": "gts",
+  "version": "1.0.0",
+  "description": "Простой таймер выключения ПК",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "distwin": "electron-builder build --win"
+  },
+  "author": "87SQUAD",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "jquery": "^3.2.1",
+    "jsdom": "^9.12.0"
+  },
+  "build": {
+    "appId": "com.87SQUAD.gotosleep",
+    "productName": "Go to Sleep",
+    "compression": "maximum",
+    "win": {
+      "target": "portable",
+      "icon": "src/img/icon.png"
+    },
+    "nsis": {
+      "deleteAppDataOnUninstall": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "allowElevation": true,
+      "runAfterFinish": false,
+      "menuCategory": true
+    }
+  }
+}

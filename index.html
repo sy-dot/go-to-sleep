@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+
+<head id="head">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="title">Go to Sleep</title>
+
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link href="src/css/menu.css" rel="stylesheet">
+  <link href="src/css/main.css" rel="stylesheet">
+
+  <script src="src/js/aligner.js" defer></script>
+
+  <!-- === FONTAWESOME ICONS === -->
+  <link rel="stylesheet" href="src/icons/fontawesome/all.min.css" defer>
+  <script src="src/icons/fontawesome/all.min.js" defer></script>
+</head>
+
+<body id="body">
+
+  <!-- === MAIN === -->
+  <div id="nav">
+    <label class="sidemenu" for="menu">
+      <div id="showTitle">
+      </div>
+    </label>
+    <div id="togglers">
+      <div id="minimizeBtn"><span>-</span>
+      </div>
+      <div id="closeBtn"><span>&times;</span>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+    <div class="menu">
+      <ul>
+        <li>
+          <span>v.<script>
+              let ver = require('./package.json');
+              document.write(ver.version.substring(0, 1));
+            </script>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- === APP HERE === -->
+  <div class="container">
+    <div class="card">
+      <img src="src/img/icon.png" alt="">
+      <h2 class="display__time-left">--:--</h2>
+
+      <div class="timer_hr">
+        <hr>
+      </div>
+
+      <form name="customForm" id="custom">
+        <input class="timer_form__input" type="number" name="minutes" placeholder="Введи минуты">
+      </form>
+
+      <div class="links">
+        <a data-time="300" class="c-timer-btn-preset" href="#">
+          <i class="fa-solid fa-power-off"></i>
+          5м
+        </a>
+        <a data-time="900" class="c-timer-btn-preset" href="#">
+          <i class="fa-solid fa-power-off"></i>
+          15м
+        </a>
+        <a data-time="3600" class="c-timer-btn-preset" href="#">
+          <i class="fa-solid fa-power-off"></i>
+          1ч
+        </a>
+        <a data-time="7200" class="c-timer-btn-preset" href="#">
+          <i class="fa-solid fa-power-off"></i>
+          2ч
+        </a>
+      </div>
+
+      <p>Что-бы отменить автовыключение, просто закрой приложение</p>
+    </div>
+  </div>
+  <!-- === APP END === -->
+
+
+  <script src="src/js/menuHandler.js" async></script>
+  <script src="src/js/init.js" async></script>
+  <script src="app.js" async></script>
+
+</body>
+
+</html>
