@@ -14,4 +14,4 @@
 
 **Данные приложения, кэш и тд. хранятся по данному пути:**
 
-**`$:\Users\%username%\AppData\Roaming\87Todo`**
+**`$:\Users\%username%\AppData\Roaming\gts`**
