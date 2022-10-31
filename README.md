@@ -1,5 +1,7 @@
 # Go to Sleep
 
+**Простой таймер выключения ПК**
+
 ![Превью](/images/Go-to-Sleep_preview.png)
 
 ### Установка
